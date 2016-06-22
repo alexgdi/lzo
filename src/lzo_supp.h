@@ -471,7 +471,7 @@
 #    ifndef vsnprintf
 #    define vsnprintf _vsnprintf
 #    endif
-#  else
+#  elif (_MSC_VER < 1900)
 #    ifndef snprintf
 #    define snprintf _snprintf
 #    endif
